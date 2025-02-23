@@ -61,7 +61,7 @@ export default function Home() {
       id: "4",
       name: "Lava Network",
       image: "https://pbs.twimg.com/profile_images/1628433459977850882/l4oqDz8R_400x400.jpg",
-      description: "Lava is the modular network blockchains use to scale and optimize any data infrastructure.",
+      description: "Modular Data Network",
       chain: "Multichain",
       cost: "FREE",
       backers: "Jump Crypto, Hashkey, etc.",
