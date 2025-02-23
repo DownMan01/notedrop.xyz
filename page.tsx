@@ -429,7 +429,7 @@ export default function Home() {
                     Status
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-black/90 border-white/10">
+                <DropdownMenuContent className="bg-white/90 border-black/10">
                   <DropdownMenuCheckboxItem
                     checked={statusFilter.includes("Active")}
                     onCheckedChange={(checked) => {
@@ -458,7 +458,7 @@ export default function Home() {
                     Type
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-black/90 border-white/10">
+                <DropdownMenuContent className="bg-white/90 border-black/10">
                   {types.map((type) => (
                     <DropdownMenuCheckboxItem
                       key={type}
