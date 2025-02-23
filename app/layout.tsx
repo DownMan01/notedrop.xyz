@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import "@/styles/globals.css"
+import { Space_Grotesk } from 'next/font/google'
+
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'NoteDrop',
@@ -21,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+   <html lang="en">
+      <body className={spaceGrotesk.className}>{children}</body>
     </html>
   )
 }
