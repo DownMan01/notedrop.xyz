@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+import type React from "react"
 import "@/styles/globals.css"
 import { Space_Grotesk } from 'next/font/google'
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'NoteDrop',
   description: 'A collection of well-researched airdrop projects in WEB3.',
   icons: {
