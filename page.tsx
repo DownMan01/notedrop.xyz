@@ -68,6 +68,17 @@ export default function Home() {
       status: "Active",
       stage: "Testnet",
     },
+    {
+      id: "5",
+      name: "Monad",
+      image: "https://pbs.twimg.com/profile_images/1877532281419739137/I_t8rg_V_400x400.jpg",
+      description: "Layer 1 Blockchain",
+      chain: "Monad",
+      cost: "FREE",
+      backers: "DragonFly Capital, Shima Capital, etc.",
+      status: "Active",
+      stage: "Testnet",
+    },
   ]
 
   // Filter function
