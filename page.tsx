@@ -509,7 +509,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="flex justify-between items-start">
-                      <CardTitle className="text-xl">{airdrop.name}</CardTitle>
+                      <CardTitle className="text-white line-clamp-1">{airdrop.name}</CardTitle>
                       <Badge
                         variant="secondary"
                         className={
@@ -527,23 +527,23 @@ export default function Home() {
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-sm">
                         <Gift className="h-4 w-4 text-violet-500" />
-                        <span className="text-gray-400">Allocation:</span>
-                        <span className="text-white line-clamp-1">{airdrop.allocation}</span>
+                        <span className="text-white line-clamp-1">Allocation:</span>
+                        <span className="text-gray-400">{airdrop.allocation}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Info className="h-4 w-4 text-fuchsia-500" />
-                        <span className="text-gray-400">Requirements:</span>
-                        <span className="text-white line-clamp-1">{airdrop.requirements}</span>
+                        <span className="text-white line-clamp-1">Requirements:</span>
+                        <span className="text-gray-400"">{airdrop.requirements}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Calendar className="h-4 w-4 text-pink-500" />
-                        <span className="text-gray-400">Deadline:</span>
-                        <span className="text-white line-clamp-1">{airdrop.deadline}</span>
+                        <span className="text-white line-clamp-1">Deadline:</span>
+                        <span className="text-gray-400">{airdrop.deadline}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Users className="h-4 w-4 text-violet-500" />
-                        <span className="text-gray-400">Participants:</span>
-                        <span className="text-white line-clamp-1">{airdrop.participants}</span>
+                        <span className="text-white line-clamp-1">Participants:</span>
+                        <span className="text-gray-400">{airdrop.participants}</span>
                       </div>
                     </div>
                   </CardContent>
