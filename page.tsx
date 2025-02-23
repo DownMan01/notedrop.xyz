@@ -75,7 +75,7 @@ export default function Home() {
       description: "Layer 1 Blockchain",
       chain: "Monad",
       cost: "FREE",
-      backers: "DragonFly Capital, Shima Capital, etc.",
+      backers: "Coinbase, Shima Capital, etc.",
       status: "Active",
       stage: "Testnet",
     },
