@@ -53,7 +53,7 @@ export default function Home() {
       description: "Stablecoin Infrastructure",
       chain: "Solana",
       cost: "Trading | Liquidity",
-      backers: "April 15, 2024",
+      backers: "Binance Labs, Maelstrom, etc.",
       status: "Active",
       stage: "Mainnet",
     },
