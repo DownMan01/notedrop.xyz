@@ -309,11 +309,8 @@ export default function Home() {
      <p>© 2024 NoteDrop. All rights reserved. Developed by 
           <a className="text-gray-400 hover:text-violet-500 transition-colors duration-300" 
              href="https://x.com/jiecrypto0" 
-             target="_blank">
-        jiecrypto0
-          </a> 
-        with the help of AI. </p>
- </div>
+             target="_blank"> jiecrypto0 </a>with the help of AI. </p> 
+        </div>
       </footer>
     </div>
   )
