@@ -13,6 +13,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="styles/favico.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body>{children}</body>
     </html>
   )
