@@ -8,8 +8,8 @@ export const metadata = {
   title: 'NoteDrop',
   description: 'A collection of well-researched airdrop projects in WEB3.',
   icons: {
-    icon: '/favicon.ico', // /public/favicon.ico
-    shortcut: '/favicon.ico', // /public/favicon.ico
+    icon: '/favico.ico', // /public/favicon.ico
+    shortcut: '/favico.ico', // /public/favicon.ico
     favico: '/favico.png', // /public/apple-touch-icon.png
     other: {
       rel: 'favico',
