@@ -184,7 +184,7 @@ export default function Home() {
     {
       id: "14",
       name: "Polygon zkEVM",
-      image: "https://images.unsplash.com/photo-1642790551169-99f9b37d6e6f?w=800&auto=format&fit=crop&q=60",
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Polygon zkEVM beta rewards",
       allocation: "350M MATIC",
       requirements: "Bridge assets, use zkEVM dApps",
