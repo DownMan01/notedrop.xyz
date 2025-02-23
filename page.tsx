@@ -528,22 +528,22 @@ export default function Home() {
                       <div className="flex items-center gap-2 text-sm">
                         <Gift className="h-4 w-4 text-violet-500" />
                         <span className="text-gray-400">Allocation:</span>
-                        <span className="text-gray-400">{airdrop.allocation}</span>
+                        <span className="text-white line-clamp-1">{airdrop.allocation}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Info className="h-4 w-4 text-fuchsia-500" />
                         <span className="text-gray-400">Requirements:</span>
-                        <span className="line-clamp-1">{airdrop.requirements}</span>
+                        <span className="text-white line-clamp-1">{airdrop.requirements}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Calendar className="h-4 w-4 text-pink-500" />
                         <span className="text-gray-400">Deadline:</span>
-                        <span>{airdrop.deadline}</span>
+                        <span className="text-white line-clamp-1">{airdrop.deadline}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Users className="h-4 w-4 text-violet-500" />
                         <span className="text-gray-400">Participants:</span>
-                        <span>{airdrop.participants}</span>
+                        <span className="text-white line-clamp-1">{airdrop.participants}</span>
                       </div>
                     </div>
                   </CardContent>
