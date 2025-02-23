@@ -533,7 +533,7 @@ export default function Home() {
                       <div className="flex items-center gap-2 text-sm">
                         <Info className="h-4 w-4 text-fuchsia-500" />
                         <span className="text-white line-clamp-1">Requirements:</span>
-                        <span className="text-gray-400"">{airdrop.requirements}</span>
+                        <span className="text-gray-400">{airdrop.requirements}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Calendar className="h-4 w-4 text-pink-500" />
