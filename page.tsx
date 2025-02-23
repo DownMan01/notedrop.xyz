@@ -306,7 +306,7 @@ export default function Home() {
 
       <footer className="border-t border-white/10 py-12">
         <div className="container mx-auto px-4 text-center text-gray-400">
-         <p>© 2024 NoteDrop. All rights reserved. Developed by <a href="https://x.com/jiecrypto0" target="_blank">jiecrypto0</a> with the help of AI.</p>
+        <p>© 2024 NoteDrop. All rights reserved. Developed by <a href="https://x.com/jiecrypto0" target="_blank" style="color: #1DA1F2; text-decoration: none; font-weight: bold;">jiecrypto0</a> with the help of AI.</p>
         </div>
       </footer>
     </div>
