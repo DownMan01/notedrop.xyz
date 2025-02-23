@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Calendar, Clock, Filter, Gift, Info, Timer, X, Users } from "lucide-react"
+import { Calendar, Clock, Filter, Gift, Info, Timer, X, Users, Server, Wallt, Globe } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -29,60 +29,60 @@ export default function Home() {
       name: "LayerZero",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Layer Zero protocol airdrop for early users and testers",
-      allocation: "100M ZRO",
-      requirements: "Bridge assets across chains, minimum 5 transactions",
-      deadline: "March 30, 2024",
+      chain: "100M ZRO",
+      cost: "Bridge assets across chains, minimum 5 transactions",
+      backers: "March 30, 2024",
       status: "Active",
-      eligibility: "Early users, bridge participants",
-      participants: "45.2K",
+      eligibility: "Early users, bridge stage",
+      stage: "45.2K",
     },
     {
       id: "2",
       name: "StarkNet",
       image: "https://images.unsplash.com/photo-1639762681057-408e52192e55?w=800&auto=format&fit=crop&q=60",
       description: "StarkNet ecosystem airdrop for protocol users",
-      allocation: "250M STARK",
-      requirements: "Use StarkNet dApps, minimum $500 in transactions",
-      deadline: "April 15, 2024",
+      chain: "250M STARK",
+      cost: "Use StarkNet dApps, minimum $500 in transactions",
+      backers: "April 15, 2024",
       status: "Upcoming",
       eligibility: "Protocol users, liquidity providers",
-      participants: "32.8K",
+      stage: "32.8K",
     },
     {
       id: "3",
       name: "Celestia",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Celestia network early adopter rewards",
-      allocation: "150M TIA",
-      requirements: "Run a node, participate in testnet",
-      deadline: "March 20, 2024",
+      chain: "150M TIA",
+      cost: "Run a node, participate in testnet",
+      backers: "March 20, 2024",
       status: "Active",
-      eligibility: "Node operators, testnet participants",
-      participants: "28.4K",
+      eligibility: "Node operators, testnet stage",
+      stage: "28.4K",
     },
     {
       id: "4",
       name: "Scroll",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Scroll zkEVM ecosystem rewards",
-      allocation: "200M SCROLL",
-      requirements: "Deploy contracts, use Scroll bridges",
-      deadline: "April 5, 2024",
+      chain: "200M SCROLL",
+      cost: "Deploy contracts, use Scroll bridges",
+      backers: "April 5, 2024",
       status: "Upcoming",
       eligibility: "Developers, bridge users",
-      participants: "21.6K",
+      stage: "21.6K",
     },
     {
       id: "5",
       name: "Taiko",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Taiko L2 community rewards program",
-      allocation: "180M TAIKO",
-      requirements: "Participate in testnet, bridge assets",
-      deadline: "March 25, 2024",
+      chain: "180M TAIKO",
+      cost: "Participate in testnet, bridge assets",
+      backers: "March 25, 2024",
       status: "Active",
       eligibility: "Testnet users, community members",
-      participants: "19.3K",
+      stage: "19.3K",
     },
     // Additional 20 airdrops
     {
@@ -90,240 +90,240 @@ export default function Home() {
       name: "Arbitrum Nova",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Arbitrum Nova L2 ecosystem rewards",
-      allocation: "300M NOVA",
-      requirements: "Trade on Nova DEXs, minimum volume $1000",
-      deadline: "April 20, 2024",
+      chain: "300M NOVA",
+      cost: "Trade on Nova DEXs, minimum volume $1000",
+      backers: "April 20, 2024",
       status: "Upcoming",
       eligibility: "DEX traders, liquidity providers",
-      participants: "38.1K",
+      stage: "38.1K",
     },
     {
       id: "7",
       name: "ZKSync Era",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "ZKSync Era protocol user rewards",
-      allocation: "250M ERA",
-      requirements: "Deploy or interact with zkSync dApps",
-      deadline: "March 28, 2024",
+      chain: "250M ERA",
+      cost: "Deploy or interact with zkSync dApps",
+      backers: "March 28, 2024",
       status: "Active",
       eligibility: "Protocol users, developers",
-      participants: "42.3K",
+      stage: "42.3K",
     },
     {
       id: "8",
       name: "Linea",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Linea mainnet launch rewards",
-      allocation: "180M LINEA",
-      requirements: "Bridge assets, minimum $200 value",
-      deadline: "April 10, 2024",
+      chain: "180M LINEA",
+      cost: "Bridge assets, minimum $200 value",
+      backers: "April 10, 2024",
       status: "Active",
       eligibility: "Early adopters, bridge users",
-      participants: "29.7K",
+      stage: "29.7K",
     },
     {
       id: "9",
       name: "Base",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Base L2 community incentives",
-      allocation: "400M BASE",
-      requirements: "Trade on Base DEXs, provide liquidity",
-      deadline: "April 25, 2024",
+      chain: "400M BASE",
+      cost: "Trade on Base DEXs, provide liquidity",
+      backers: "April 25, 2024",
       status: "Upcoming",
       eligibility: "Traders, liquidity providers",
-      participants: "51.2K",
+      stage: "51.2K",
     },
     {
       id: "10",
       name: "Mantle",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Mantle Network launch rewards",
-      allocation: "200M MNT",
-      requirements: "Stake MNT, participate in governance",
-      deadline: "March 22, 2024",
+      chain: "200M MNT",
+      cost: "Stake MNT, participate in governance",
+      backers: "March 22, 2024",
       status: "Active",
-      eligibility: "Stakers, governance participants",
-      participants: "33.9K",
+      eligibility: "Stakers, governance stage",
+      stage: "33.9K",
     },
     {
       id: "11",
       name: "Mode",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Mode L2 early adopter program",
-      allocation: "150M MODE",
-      requirements: "Deploy contracts, use Mode bridges",
-      deadline: "April 8, 2024",
+      chain: "150M MODE",
+      cost: "Deploy contracts, use Mode bridges",
+      backers: "April 8, 2024",
       status: "Active",
       eligibility: "Developers, early users",
-      participants: "27.5K",
+      stage: "27.5K",
     },
     {
       id: "12",
       name: "Blast",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Blast L2 launch incentives",
-      allocation: "280M BLAST",
-      requirements: "Deposit ETH, participate in testnet",
-      deadline: "April 30, 2024",
+      chain: "280M BLAST",
+      cost: "Deposit ETH, participate in testnet",
+      backers: "April 30, 2024",
       status: "Upcoming",
       eligibility: "ETH depositors, testnet users",
-      participants: "44.8K",
+      stage: "44.8K",
     },
     {
       id: "13",
       name: "Metis",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Metis Andromeda rewards",
-      allocation: "120M METIS",
-      requirements: "Use Metis dApps, minimum 3 transactions",
-      deadline: "March 26, 2024",
+      chain: "120M METIS",
+      cost: "Use Metis dApps, minimum 3 transactions",
+      backers: "March 26, 2024",
       status: "Active",
       eligibility: "dApp users, traders",
-      participants: "23.1K",
+      stage: "23.1K",
     },
     {
       id: "14",
       name: "Polygon zkEVM",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Polygon zkEVM beta rewards",
-      allocation: "350M MATIC",
-      requirements: "Bridge assets, use zkEVM dApps",
-      deadline: "April 12, 2024",
+      chain: "350M MATIC",
+      cost: "Bridge assets, use zkEVM dApps",
+      backers: "April 12, 2024",
       status: "Active",
       eligibility: "Bridge users, dApp users",
-      participants: "47.6K",
+      stage: "47.6K",
     },
     {
       id: "15",
       name: "Optimism",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Optimism Bedrock upgrade rewards",
-      allocation: "220M OP",
-      requirements: "Stake OP, participate in governance",
-      deadline: "April 18, 2024",
+      chain: "220M OP",
+      cost: "Stake OP, participate in governance",
+      backers: "April 18, 2024",
       status: "Upcoming",
-      eligibility: "Stakers, governance participants",
-      participants: "39.4K",
+      eligibility: "Stakers, governance stage",
+      stage: "39.4K",
     },
     {
       id: "16",
       name: "dYdX v4",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "dYdX v4 chain launch rewards",
-      allocation: "400M DYDX",
-      requirements: "Trade on dYdX v4, minimum volume $5000",
-      deadline: "March 24, 2024",
+      chain: "400M DYDX",
+      cost: "Trade on dYdX v4, minimum volume $5000",
+      backers: "March 24, 2024",
       status: "Active",
       eligibility: "Traders, liquidity providers",
-      participants: "52.8K",
+      stage: "52.8K",
     },
     {
       id: "17",
       name: "Fuel Network",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Fuel Network beta program",
-      allocation: "180M FUEL",
-      requirements: "Run a node, participate in testnet",
-      deadline: "April 22, 2024",
+      chain: "180M FUEL",
+      cost: "Run a node, participate in testnet",
+      backers: "April 22, 2024",
       status: "Upcoming",
       eligibility: "Node operators, developers",
-      participants: "31.2K",
+      stage: "31.2K",
     },
     {
       id: "18",
       name: "Berachain",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Berachain ecosystem rewards",
-      allocation: "300M BERA",
-      requirements: "Participate in testnet activities",
-      deadline: "April 15, 2024",
+      chain: "300M BERA",
+      cost: "Participate in testnet activities",
+      backers: "April 15, 2024",
       status: "Active",
-      eligibility: "Testnet participants",
-      participants: "43.7K",
+      eligibility: "Testnet stage",
+      stage: "43.7K",
     },
     {
       id: "19",
       name: "Kakarot",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Kakarot ZK rollup rewards",
-      allocation: "150M KKT",
-      requirements: "Deploy contracts, test ZK proofs",
-      deadline: "March 29, 2024",
+      chain: "150M KKT",
+      cost: "Deploy contracts, test ZK proofs",
+      backers: "March 29, 2024",
       status: "Active",
       eligibility: "Developers, testers",
-      participants: "25.9K",
+      stage: "25.9K",
     },
     {
       id: "20",
       name: "Eigen Layer",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Eigen Layer staking rewards",
-      allocation: "250M EIGEN",
-      requirements: "Stake ETH in Eigen Layer",
-      deadline: "April 28, 2024",
+      chain: "250M EIGEN",
+      cost: "Stake ETH in Eigen Layer",
+      backers: "April 28, 2024",
       status: "Upcoming",
       eligibility: "ETH stakers",
-      participants: "36.3K",
+      stage: "36.3K",
     },
     {
       id: "21",
       name: "Starkware",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Starkware ecosystem incentives",
-      allocation: "320M STARK",
-      requirements: "Use StarkEx platforms, trade on dYdX",
-      deadline: "April 3, 2024",
+      chain: "320M STARK",
+      cost: "Use StarkEx platforms, trade on dYdX",
+      backers: "April 3, 2024",
       status: "Active",
       eligibility: "Platform users, traders",
-      participants: "41.5K",
+      stage: "41.5K",
     },
     {
       id: "22",
       name: "Aztec Network",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Aztec Connect privacy rewards",
-      allocation: "200M AZTEC",
-      requirements: "Use Aztec Connect bridge",
-      deadline: "March 27, 2024",
+      chain: "200M AZTEC",
+      cost: "Use Aztec Connect bridge",
+      backers: "March 27, 2024",
       status: "Active",
       eligibility: "Privacy protocol users",
-      participants: "28.4K",
+      stage: "28.4K",
     },
     {
       id: "23",
       name: "Manta Network",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Manta Network ZK rewards",
-      allocation: "280M MANTA",
-      requirements: "Test ZK applications, provide feedback",
-      deadline: "April 17, 2024",
+      chain: "280M MANTA",
+      cost: "Test ZK applications, provide feedback",
+      backers: "April 17, 2024",
       status: "Upcoming",
       eligibility: "Testers, developers",
-      participants: "34.8K",
+      stage: "34.8K",
     },
     {
       id: "24",
       name: "Penumbra",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Penumbra privacy protocol rewards",
-      allocation: "180M PEN",
-      requirements: "Participate in testnet, run validators",
-      deadline: "April 7, 2024",
+      chain: "180M PEN",
+      cost: "Participate in testnet, run validators",
+      backers: "April 7, 2024",
       status: "Active",
       eligibility: "Validators, testnet users",
-      participants: "22.6K",
+      stage: "22.6K",
     },
     {
       id: "25",
       name: "Eclipse",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=60",
       description: "Eclipse Solana rollup rewards",
-      allocation: "240M ECLIPSE",
-      requirements: "Deploy Solana contracts on Eclipse",
-      deadline: "April 23, 2024",
+      chain: "240M ECLIPSE",
+      cost: "Deploy Solana contracts on Eclipse",
+      backers: "April 23, 2024",
       status: "Upcoming",
       eligibility: "Solana developers",
-      participants: "32.1K",
+      stage: "32.1K",
     },
   ]
 
@@ -374,7 +374,7 @@ export default function Home() {
                 transition={{ delay: 0.2 }}
                 className="text-xl text-gray-400 mb-8"
               >
-                Stay updated with the latest airdrops from promising crypto projects. Track requirements, deadlines, and
+                Stay updated with the latest airdrops from promising crypto projects. Track cost, backerss, and
                 eligibility.
               </motion.p>
             </div>
@@ -392,7 +392,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Check Eligibility</h3>
                 <p className="text-gray-400">
-                  Please look over the requirements and make sure you meet the criteria for participation.
+                  Please look over the cost and make sure you meet the criteria for participation.
                 </p>
               </div>
               <div className="text-center p-6">
@@ -401,7 +401,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Complete Tasks</h3>
                 <p className="text-gray-400">
-                  Follow the project guidelines and complete the required tasks before the deadline.
+                  Follow the project guidelines and complete the required tasks before the backers.
                 </p>
               </div>
               <div className="text-center p-6">
@@ -527,23 +527,23 @@ export default function Home() {
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-sm">
                         <Gift className="h-4 w-4 text-violet-500" />
-                        <span className="text-white line-clamp-1">Allocation:</span>
-                        <span className="text-gray-400">{airdrop.allocation}</span>
+                        <span className="text-white line-clamp-1">Chain:</span>
+                        <span className="text-gray-400">{airdrop.chain}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Info className="h-4 w-4 text-fuchsia-500" />
-                        <span className="text-white line-clamp-1">Requirements:</span>
-                        <span className="text-gray-400">{airdrop.requirements}</span>
+                        <span className="text-white line-clamp-1">Cost:</span>
+                        <span className="text-gray-400">{airdrop.cost}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Calendar className="h-4 w-4 text-pink-500" />
-                        <span className="text-white line-clamp-1">Deadline:</span>
-                        <span className="text-gray-400">{airdrop.deadline}</span>
+                        <span className="text-white line-clamp-1">Backers:</span>
+                        <span className="text-gray-400">{airdrop.backers}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Users className="h-4 w-4 text-violet-500" />
-                        <span className="text-white line-clamp-1">Participants:</span>
-                        <span className="text-gray-400">{airdrop.participants}</span>
+                        <span className="text-white line-clamp-1">Stage:</span>
+                        <span className="text-gray-400">{airdrop.stage}</span>
                       </div>
                     </div>
                   </CardContent>
