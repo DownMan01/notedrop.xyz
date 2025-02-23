@@ -128,43 +128,9 @@ export default function Home() {
                 transition={{ delay: 0.2 }}
                 className="text-xl text-gray-400 mb-8"
               >
-                Stay updated with the latest airdrops from promising crypto projects. Track cost, backerss, and
+                Stay updated with the latest airdrops from promising crypto projects. Track cost, backers, and
                 eligibility.
               </motion.p>
-            </div>
-          </div>
-        </section>
-
-        {/* Guide Section - Moved to top */}
-        <section id="guide" className="bg-white/5 border-y border-white/10">
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-12 text-center">How to Participate</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <div className="flex justify-center mb-4">
-                  <Info className="h-12 w-12 text-violet-500" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Check Eligibility</h3>
-                <p className="text-gray-400">
-                  Please look over the cost and make sure you meet the criteria for participation.
-                </p>
-              </div>
-              <div className="text-center p-6">
-                <div className="flex justify-center mb-4">
-                  <Clock className="h-12 w-12 text-fuchsia-500" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Complete Tasks</h3>
-                <p className="text-gray-400">
-                  Follow the project guidelines and complete the required tasks before the backers.
-                </p>
-              </div>
-              <div className="text-center p-6">
-                <div className="flex justify-center mb-4">
-                  <Timer className="h-12 w-12 text-pink-500" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Wait for Distribution</h3>
-                <p className="text-gray-400">Stay updated and wait for the official token distribution announcement.</p>
-              </div>
             </div>
           </div>
         </section>
