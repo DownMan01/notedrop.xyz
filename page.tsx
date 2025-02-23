@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Calendar, Clock, Filter, Gift, Info, Timer, X, Users, Server, Wallt, Globe } from "lucide-react"
+import { Calendar, Clock, Filter, Gift, Info, Timer, X, Users, Server, Wallet, Globe } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -526,22 +526,22 @@ export default function Home() {
                     <p className="text-gray-400">{airdrop.description}</p>
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-sm">
-                        <Gift className="h-4 w-4 text-violet-500" />
+                        <Server className="h-4 w-4 text-violet-500" />
                         <span className="text-white line-clamp-1">Chain:</span>
                         <span className="text-gray-400">{airdrop.chain}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
-                        <Info className="h-4 w-4 text-fuchsia-500" />
+                        <Wallet className="h-4 w-4 text-fuchsia-500" />
                         <span className="text-white line-clamp-1">Cost:</span>
                         <span className="text-gray-400">{airdrop.cost}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
-                        <Calendar className="h-4 w-4 text-pink-500" />
+                        <Users className="h-4 w-4 text-pink-500" />
                         <span className="text-white line-clamp-1">Backers:</span>
                         <span className="text-gray-400">{airdrop.backers}</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
-                        <Users className="h-4 w-4 text-violet-500" />
+                        <Globe className="h-4 w-4 text-violet-500" />
                         <span className="text-white line-clamp-1">Stage:</span>
                         <span className="text-gray-400">{airdrop.stage}</span>
                       </div>
